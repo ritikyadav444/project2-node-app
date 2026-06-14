@@ -3,7 +3,7 @@ const express = require('express');
 const app = express();
 
 app.get('/', (req, res) => {
-    res.send('Project 2 CI/CD Pipeline is Working!');
+    res.send('Hello, World!' + ' This is a simple Express server.' + ' It listens on port 3000 and responds to GET requests at the root URL.');
 });
 
 app.listen(3000, () => {
