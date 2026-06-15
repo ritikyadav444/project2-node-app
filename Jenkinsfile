@@ -13,11 +13,11 @@ pipeline {
         stage('Build and Deploy') {
             steps {
                 sh '''
+                cd /home/ubuntu/project2-node-app
                 docker compose down
                 docker compose up --build -d
                 '''
             }
         }
-
     }
 }
