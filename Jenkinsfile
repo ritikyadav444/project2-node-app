@@ -13,6 +13,8 @@ pipeline {
         stage('Build and Deploy') {
             steps {
                 sh '''
+                pwd
+                ls -la
                 docker compose down
                 docker compose up --build -d
                 '''
